@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# サンプル（サンプル）
-=======
 # サンプル（プロダクト名）hello github
->>>>>>> 0c1681bcb5c9b518e5a7c460f954c80a61f8e84c
 
 [![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2022/08/JPHACKS2022_ogp.jpg)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
 
