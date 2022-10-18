@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Link from 'next/link'
+import Button from './button'
 
 const Header = () => {
   return (
@@ -8,6 +9,8 @@ const Header = () => {
           <a className="text-2xl font-logo">tomato</a>
         </Link>
       </h1>
+      <span className="flex-1"></span>
+      <Button>ログイン</Button>
     </header>
   );
 };

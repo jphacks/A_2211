@@ -1,4 +1,4 @@
-# サンプル（プロダクト名）hello github
+# サンプル（プロダクト名）
 
 [![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2022/08/JPHACKS2022_ogp.jpg)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
 
@@ -6,7 +6,6 @@
 ### 背景(製品開発のきっかけ、課題等）
 ### 製品説明（具体的な製品の説明）
 ### 特長
-aaaaa
 #### 1. 特長1
 #### 2. 特長2
 #### 3. 特長3
@@ -14,8 +13,8 @@ aaaaa
 ### 解決出来ること
 ### 今後の展望
 ### 注力したこと（こだわり等）
-* いいいううう
-* あああ
+* 
+* 
 
 ## 開発技術
 ### 活用した技術
