@@ -5,17 +5,23 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Button from '../components/button'
 import TodoList from '../components/list'
+import Nae from '../components/nae'
+import { useRecoilState, useSetRecoilState } from "recoil";
+import { Todo, todoListState } from "../atoms/states";
 
 const Home: NextPage = () => {
+  let isTask = true;
+  
+  const view = (isTask: boolean) => {
+    if(isTask)  return <TodoList />;
+    else return <Nae />
+    }
+
   return (
   <div className="container mx-auto">
     <div className="planter text-center mx-auto">
-      <h3>タスクはありません</h3>
-      <div>
-        <Image src="/images/nae.png" width={200} height={150}/>
-      </div>
+    {view(isTask)}
     </div>
-    <TodoList />
     <div className="text-center">
       <Link href="/input">
           <Button>タスクを入力する</Button>
