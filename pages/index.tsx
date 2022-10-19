@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Button from '../components/button'
+import TodoList from '../components/list'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
         <Image src="/images/nae.png" width={200} height={150}/>
       </div>
     </div>
+    <TodoList />
     <div className="text-center">
       <Link href="/input">
           <Button>タスクを入力する</Button>
