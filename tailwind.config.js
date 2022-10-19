@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        logo: ['Montserrat', 'sans-serif'],
+        logo: ['Sawarabi Mincho', 'serif'],
       }
     },
   },
@@ -15,5 +15,7 @@ module.exports = {
       cursor: ['disabled'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };
