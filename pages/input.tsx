@@ -12,6 +12,7 @@ type FormData = {
   id: string,
   title: string,
   priority: number,
+  date: string,
   isComplete: boolean,
   
 }
@@ -23,10 +24,10 @@ const InputPage: React.FC = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
         mode: 'onChange',
         defaultValues: {
-            id : moment().format('YYYYMMDDHHmmss'),
-            title: '',
-            priority: NaN,
-            isComplete: false,
+        id : moment().format('YYYYMMDDHHmmss'),
+        title: '',
+        priority: NaN,
+        isComplete: false,
         }
     })
 
@@ -40,35 +41,8 @@ const InputPage: React.FC = () => {
     }
 
   return (
-    <div className="container text-center mx-auto">
+    <div className="container text-center mx-auto my-2">
       <h1 className="text-4xl text-green-700 font-logo mb-8">タスク入力</h1>
-        <div className="item-center">
-          <div className="sm:grid sm:grid-cols-2 sm:px-6 mt-3">
-            <h3 className="">タスクの内容</h3>
-            <input type="text" className="p-2.5 w-full bg-gray-50 rounded-lg border border-gray-300"></input>
-          </div>
-          <div className="sm:grid sm:grid-cols-2 sm:px-6 mt-3">
-            <h3 className="">タスク優先度</h3>
-                <select className="rounded-lg">
-                    <option>---数字が小さい方が優先度高い---</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-          </div>
-          <div className="sm:grid sm:grid-cols-2 sm:px-6 mt-3">
-            <h3 className="">期限</h3>
-                <input type="date" className="rounded-lg"></input>
-          </div>
-          <div className="sm:grid sm:grid-cols-2 sm:px-6 my-3">
-            <h3 className="">タグ</h3>
-            <textarea className="p-2.5 w-full bg-gray-50 rounded-lg border border-gray-300"></textarea>
-          </div>
-        </div>
-        <Button>追加</Button>
-
         <div>
             <form onSubmit={handleSubmit(addTodo)}>
             <div className="sm:grid sm:grid-cols-2 sm:px-6 my-3">
@@ -87,24 +61,35 @@ const InputPage: React.FC = () => {
                 {errors.title && <span>{errors.title.message}</span>}
                 </div>
                 <div className="sm:grid sm:grid-cols-2 sm:px-6 my-3">
-                <h2>タスク優先度</h2>
-                <select 
+                  <h2>タスク優先度</h2>
+                  <select 
+                    className="rounded-lg"
+                    {...register(
+                      "priority",
+                      {
+                          required: '必須項目です',
+                      }
+                  )}>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                  </select>
+                  {errors.title && <span>{errors.title.message}</span>}
+                </div>
+                <div className="sm:grid sm:grid-cols-2 sm:px-6 my-3">
+                  <h3 className="">期限</h3>
+                  <input type="date" 
                   className="rounded-lg"
                   {...register(
-                    "priority",
+                    "date",
                     {
                         required: '必須項目です',
                     }
-                )}>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-                {errors.title && <span>{errors.title.message}</span>}
+                  )}></input>
                 </div>
-                <button type="submit">送信</button>
+                <button type="submit" className="px-4 py-2 rounded bg-blue-500 text-white disabled:cursor-default disabled:opacity-50">送信</button>
             </form>
         </div>
     </div>
