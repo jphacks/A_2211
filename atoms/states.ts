@@ -4,6 +4,7 @@ export type Todo= {
     id: string
     title: string
     priority: number
+    date: string,
     isComplete: boolean
 }
 
