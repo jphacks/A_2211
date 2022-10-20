@@ -1,10 +1,13 @@
-# サンプル（プロダクト名）
+# プライオリティートマト
 
 [![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2022/08/JPHACKS2022_ogp.jpg)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
 
 ## 製品概要
+
 ### 背景(製品開発のきっかけ、課題等）
+やることが複数あった時に、優先順位や期限をきちんと把握しきれず、直前になって焦ってやることがある。
 ### 製品説明（具体的な製品の説明）
+
 ### 特長
 #### 1. 特長1
 #### 2. 特長2
