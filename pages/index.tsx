@@ -11,7 +11,6 @@ import { Todo, todoListState } from "../atoms/states";
 
 const Home: NextPage = () => {
   let isTask = true;
-  
   const view = (isTask: boolean) => {
     if(isTask)  return <TodoList />;
     else return <Nae />
@@ -24,7 +23,9 @@ const Home: NextPage = () => {
     </div>
     <div className="text-center">
       <Link href="/input">
-          <Button>タスクを入力する</Button>
+        <button
+        className="px-4 py-2 rounded bg-blue-500 text-white disabled:cursor-default disabled:opacity-50 m-3"
+        >タスクを入力する</button>
       </Link>
     </div>
   </div>
