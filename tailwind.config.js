@@ -4,6 +4,9 @@ module.exports = {
   content: [],
   theme: {
     extend: {
+      colors: {
+        'pink-red' : '#FF7272',
+      },
       fontFamily: {
         logo: ['Sawarabi Mincho', 'serif'],
       }
