@@ -1,6 +1,6 @@
 # Priority TOMATO 〜タスクの優先度をわかりやすく〜
 
-[![IMAGE ALT TEXT HERE](https://www.canva.com/design/DAFPr2MehKQ/hZ2eOijn5M9IqYQTFlb4_w/edit?utm_content=DAFPr2MehKQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
+[![IMAGE ALT TEXT HERE](/public/images/thumbnail.png)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
 
 ## 製品概要
 ### 背景(製品開発のきっかけ、課題等）
