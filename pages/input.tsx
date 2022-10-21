@@ -42,7 +42,7 @@ const InputPage: React.FC = () => {
 
   return (
     <div className="container text-center mx-auto my-2">
-      <h1 className="text-4xl text-green-700 font-logo mb-8">タスク入力</h1>
+      <h1 className="text-4xl text-green-700 font-logo mb-8">Task Input</h1>
         <div>
             <form onSubmit={handleSubmit(addTodo)}>
             <div className="sm:grid sm:grid-cols-2 sm:px-6 my-3">

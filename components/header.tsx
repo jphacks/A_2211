@@ -1,16 +1,16 @@
 import Link from 'next/link'
-import Button from './button'
+import Image from 'next/image'
 
 const Header = () => {
   return (
-    <header className="border-b flex items-center h-14 px-4">
+    <header className="border-b flex items-center h-14 px-4 bg-pink-red">
+      <Image src="/images/tomatoicon.png" width={40} height={40} />
       <h1>
         <Link href="/">
-          <a className="text-2xl font-logo">tomato</a>
+        
+          <a className="mx-2 text-2xl font-logo text-white">Priority TOMATO</a>
         </Link>
       </h1>
-      <span className="flex-1"></span>
-      <Button>ログイン</Button>
     </header>
   );
 };

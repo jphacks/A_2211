@@ -17,7 +17,8 @@ const Home: NextPage = () => {
     }
 
   return (
-  <div className="container mx-auto">
+  <div className="container mx-auto text-center">
+    <h1 className="text-4xl text-green-700 font-logo mb-8 my-2">Task List</h1>
     <div className="planter text-center mx-auto">
     {view(isTask)}
     </div>
