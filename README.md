@@ -1,6 +1,6 @@
 # Priority TOMATO 〜タスクの優先度をわかりやすく〜
 
-[![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2022/08/JPHACKS2022_ogp.jpg)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
+[![IMAGE ALT TEXT HERE](https://www.canva.com/design/DAFPr2MehKQ/hZ2eOijn5M9IqYQTFlb4_w/edit)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
 
 ## 製品概要
 ### 背景(製品開発のきっかけ、課題等）
