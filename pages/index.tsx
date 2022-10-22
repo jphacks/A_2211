@@ -10,6 +10,7 @@ import { Todo, todoListState } from "../atoms/states";
 import Modal from '../components/modal'
 import {useState} from 'react'
 import Usage from '../components/disclosure'
+
 const Home: NextPage = () => {
   let isTask = true;
   const view = (isTask: boolean) => {
@@ -35,7 +36,7 @@ const Home: NextPage = () => {
    
   </div>
   <div className="text-center">
-        <Link href="/input">
+        <Link href="/inputpage">
           <button
           className="px-4 py-2 rounded bg-green-700 text-white disabled:cursor-default disabled:opacity-50 m-3"
           >タスクを入力する</button>

@@ -1,13 +1,13 @@
 import React from "react"
 import Head from 'next/head'
 import Link from 'next/link' //追記
-import Button from '../components/button'
+import Button from './button'
 import { useForm,SubmitHandler } from "react-hook-form"
 import { useSetRecoilState } from "recoil";
 import { todoListState } from "../atoms/states";
 import { isTask } from "../atoms/task";
 import moment from "moment";
-import Modal from '../components/modal'
+import Modal from './modal'
 import {useState} from 'react'
 
 type FormData = {
@@ -19,7 +19,7 @@ type FormData = {
   
 }
 
-const InputPage: React.FC = () => {
+const Input: React.FC = () => {
   const setTodoList = useSetRecoilState(todoListState);
 
   const setTask = useSetRecoilState(isTask);
@@ -95,27 +95,27 @@ const InputPage: React.FC = () => {
                   )}></input>
                 </div>
                 <button onClick={() => setIsOpen(true)} type="submit" className="px-4 py-2 rounded bg-green-700 text-white disabled:cursor-default disabled:opacity-50">送信</button>
-                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+                
+            </form>
+            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                   <h1 className="text-3xl text-green-700 font-logo mb-8 my-1 text-center">タスクを登録しました</h1>
                   <div className="sm:grid sm:grid-cols-2 sm:px-6 my-3">
-                  
                     <button
                     onClick={() => setIsOpen(false)}
                     className="px-2 py-2 rounded bg-green-700 text-white disabled:cursor-default disabled:opacity-50 m-3"
                     >続けて入力する</button>
-                 
+
                   <Link href="/">
                     <button
                     className="px-4 py-2 rounded bg-green-700 text-white disabled:cursor-default disabled:opacity-50 m-3"
                     >タスクリストへ</button>
                   </Link>
                   </div>
-                </Modal>
-            </form>
+              </Modal>
         </div>
     </div>
     
   )
 }
 
-export default InputPage;
+export default Input;

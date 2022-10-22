@@ -19,8 +19,8 @@ const TodoList = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     
-    const Day = (id:string, i:number) => {
-        const dateTask = dayjs(id);
+    const Day = (date:string, i:number) => {
+        const dateTask = dayjs(date);
         const now = dayjs();
         const day = dateTask.diff(now, 'day', false);
         const  pri = i;
@@ -60,20 +60,7 @@ const TodoList = () => {
                         {item.date} まで
                         </div>
                         </div>
-                        <button className="px-2 py-1 rounded bg-pink-red text-white disabled:cursor-default disabled:opacity-20 mx-auto" onClick={() => setIsOpen(true)}>タスク完了</button>
-                        
-                        <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-                        <h1 className="text-3xl text-green-700 font-logo mb-8 my-1 text-center">タスクを消去しますか？</h1>
-                        <div className="sm:grid sm:grid-cols-2 sm:px-6 my-3">
-                        <button  onClick={() => { setIsOpen(false) }} className="text-2xl px-2 py-1 rounded bg-blue-500 text-white disabled:cursor-default disabled:opacity-20 mx-auto">
-                            戻る
-                        </button>
-                        <button  onClick={() => { deleteTodo(item.id),setIsOpen(false) }} className="text-2xl px-2 py-1 rounded bg-pink-red text-white disabled:cursor-default disabled:opacity-20 mx-auto">
-                            タスク完了!!
-                        </button>
-                        </div>
-                        </Modal>
-                        
+                        <button className="px-2 py-1 rounded bg-pink-red text-white disabled:cursor-default disabled:opacity-20 mx-auto" onClick={() =>  deleteTodo(item.id)}>タスク完了</button>
                         
                         
                     </div>
