@@ -1,8 +1,9 @@
 # Priority TOMATO 〜タスクの優先度をわかりやすく〜
 
-[![IMAGE ALT TEXT HERE](/public/images/thumbnail.png)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
+![IMAGE ALT TEXT HERE](/public/images/thumbnail.png)
 
 ## 製品概要
+[![IMAGE ALT TEXT HERE](/public/images/thumbnail.png)](https://www.youtube.com/watch?v=fyXdev-Ub0Q)
 ### 背景(製品開発のきっかけ、課題等）
 やることがいくつもあるときに、期限直前になって焦ってこなすことってありますよね。  
 タスクごとに期限だったり、優先的にすべき重要なものなのか、などの要素があります。  
